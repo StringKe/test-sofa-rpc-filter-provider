@@ -1,0 +1,37 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: "@artifactId@"
+
+  redis:
+    host: ${redis.url:127.0.0.1}
+    port: 6379
+    password:
+    timeout: 10s
+    lettuce:
+      pool:
+        max-active: 200
+        max-wait: -1ms
+        max-idle: 10
+        min-idle: 0
+
+com:
+  alipay:
+    sofa:
+      rpc:
+        rest-port: ${random.int(10000,50000)}
+        bolt-port: ${random.int(10000,50000)}
+        dubbo-port: ${random.int(10000,50000)}
+        h2c-port: ${random.int(10000,50000)}
+        http-port: ${random.int(10000,50000)}
+        triple-port: ${random.int(10000,50000)}
+        virtual-port: ${random.int(10000,50000)}
+        registry-address: consul://${consul.url:127.0.0.1}:8500
+        enable-mesh: true
+        rest-swagger: false
+        enable-swagger: false
+        virtual-host: 127.0.0.1
+        rest-hostname: 127.0.0.1
+        bound-host: 127.0.0.1

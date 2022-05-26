@@ -1,0 +1,2 @@
+com.test.rpc.filter.SaTokenSofaRpcConsumerFilter          #   -100
+com.test.rpc.filter.SaTokenSofaRpcProviderFilter          #   -200

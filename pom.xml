@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.alipay.sofa</groupId>
+        <artifactId>sofaboot-dependencies</artifactId>
+        <version>3.12.1</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.txys</groupId>
+    <artifactId>project-parent</artifactId>
+    <version>1.0.0</version>
+    <name>根模块</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>service-interface</module>
+        <module>gateway-1</module>
+        <module>sub-service-1</module>
+        <module>test-filter</module>
+    </modules>
+
+    <properties>
+        <app.version>1.0.0</app.version>
+        <revision>${app.version}</revision>
+        <sofa.boot.version>3.12.1</sofa.boot.version>
+        <consul-api.version>1.4.2</consul-api.version>
+
+        <spring.boot.version>2.4.13</spring.boot.version>
+        <java.version>1.8</java.version>
+        <javax.validation.api>2.0.1.Final</javax.validation.api>
+
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <dynamic-datasource.version>2.5.7</dynamic-datasource.version>
+        <p6spy.version>3.8.5</p6spy.version>
+        <mybatis-plus.version>3.2.0</mybatis-plus.version>
+
+        <sa-token.version>1.30.0</sa-token.version>
+        <cglib-nodep.version>3.3.0</cglib-nodep.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
